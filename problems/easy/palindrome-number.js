@@ -2,30 +2,22 @@
 
 var isPalindrome = function(x) {
 
-    var word = x + ""
+    var word = "" + x
 
-    let split = word.split("")
+    var name = word.split("");
 
-    var size = split.length 
+    var letter = word.split("");
 
-    for(var i = split.length -1 ; i >= 0; i--){
+    var splitt =  letter.reverse();
 
-        var arr = []
 
-        arr[size - i ] = split[i]
-
-        if(arr == split){
-            return true
-        }
-
+    if ( splitt.toString() === name.toString()){
+        return true
     }
-
-
-
     return false
 };
 
-var x = 121;
+var x = 100;
 
 var print = isPalindrome(x);
 
